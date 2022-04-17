@@ -24,6 +24,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  outline: 2px solid red;
 }
 
 h1,
@@ -330,31 +331,38 @@ line-height: 1.16;
 text-align: center;
 }
 
+/* Командные иконки */
 .list-icon {
   display: flex;
-  margin-left: 30px;
   margin-bottom: 30px;
+  margin-left: 32px;
 }
 
-.team-icon {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-
-  fill: var(--icon-color);
-}
-
-.team-section
+.list-icon
 .item-icon + .item-icon {
   margin-left: 10px;
 }
 
-.team-section .team-icon:hover,
-.team-section .team-icon:focus {
+.link-icon {
+  display: flex;
+  justify-items: center;
+  align-items: center;
   border-radius: 50%;
+  padding: 12px;
 
-  background-color: var(--third-color);
-  fill: var(--fourth-color);
+  color: var(--icon-color);
+}
+
+.link-icon:hover,
+.link-icon:hover {
+color: var(--fourth-color);
+background-color: var(--third-color);
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .item {
@@ -372,6 +380,55 @@ text-align: center;
   line-height: 1.18;  
   text-align: center;
   margin-bottom: 16px;
+}
+
+
+/* Клиенты */
+.clients-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.client-list {
+  display: flex;
+}
+
+.client-list
+.client-item + .client-item {
+  margin-left: 30px;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+
+  color: var(--icon-color);
+}
+
+.client-link:hover,
+.client-link:hover {
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+
+  fill: currentColor;
+}
+
+/* Подвал */
+.footer-info {
+  display: flex;
 }
 
 .footer-bottom {
@@ -401,6 +458,53 @@ display: inline-block;
   color: var(--fourth-color);
   line-height: 1.71;
   font-style: normal;
+}
+
+.footer-block {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer-title {
+margin-bottom: 20px;
+
+  color: var(--fourth-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-list .footer-item + .footer-item {
+  margin-left: 10px;
+}
+
+.footer-social {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 12px;
+
+  color: var(--fourth-color);
+  background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.footer-social:hover,
+.footer-social:hover {
+  color: var(--fourth-color);
+  background-color: var(--third-color);
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* Кнопки в портфолио */
