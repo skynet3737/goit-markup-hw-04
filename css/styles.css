@@ -68,6 +68,10 @@ a {
 }
 
 /* Логотип */
+.header-logo {
+  margin-right: 93px;
+}
+
 .logo-web {
   color: var(--third-color);
   font-family: 'Raleway', sans-serif;
@@ -77,8 +81,6 @@ a {
 }
 
 .logo-header {
-margin-right: 93px;
-
   color: var(--second-color);
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
